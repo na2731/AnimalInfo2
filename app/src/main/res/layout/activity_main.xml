@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.animalinfo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/aniName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animal Name"
+            android:textColor="#808080"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/legs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="legs"
+            android:textColor="#808080"
+            android:layout_marginLeft="15dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Has fur?"
+            android:layout_marginLeft="15dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carnivores">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herbivores">
+            </RadioButton>
+
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/moreInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="More information"
+            android:textColor="#808080"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:onClick="openSecActivity"
+            android:id="@+id/submitButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
